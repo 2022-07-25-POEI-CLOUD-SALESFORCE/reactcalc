@@ -1,38 +1,54 @@
+* {
+  /* pour que le padding et le border ne changent pas les dimensions des éléments */
+  box-sizing: border-box;
+}
 .App {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid silver;
+  padding: 5px;
+}
+
+/* pourl'entête */
+.MyHeader{
+  display: flex;
+}
+.MyHeader img {
+  max-width: 150px;
+}
+/* Pied de page */
+.MyFooter {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Personnalisation des boutons */ 
+.MyButton {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 1.2em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Résultat */
+.resultat {
+  width: 100%;
+  background: black;
+  color: lime;
+  text-align: right;
+  font-size: 2.5em;
+  padding: 2px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Formulaire */
+.ok {
+  border-color: limegreen;
 }
-
-.App-link {
-  color: #61dafb;
+.ko {
+  border-color: crimson;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  display: block;
+  font-size: 1.3em;
+}
+input {
+  width: 100%;
+  font-size: 2em;
 }
